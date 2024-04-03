@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="_fe62f3cc-6c28-44bd-9b9b-1a9caa7a2936.jpeg" type="image/x-icon">
+  <title>Sistema Mrendei Art</title>
+  <style>
+    body {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      background-image: linear-gradient(to right, blue, yellow);
+    }
+    
+
+    .login {
+      background-color: rgba(0, 0, 0, 0.8);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 5%;
+      border-radius: 10%;
+    }
+
+    .login h1 {
+      color: aliceblue;
+    }
+
+    .ra1,
+    .senha1 {
+      padding: 2%;
+      border: 1px solid #ccc;
+      outline: none;
+    }
+
+    .entra1 {
+      background-color: blue;
+      color: aliceblue;
+      font-size: large;
+      padding: 10%;
+      width: 100%;
+      border: none;
+      border-radius: 2%;
+      cursor: pointer;
+    }
+    .kk{
+
+        color: aliceblue;
+      font-size: arial;
+      padding: 10%;
+      width: 100%;
+      border: none;
+      border-radius: 2%;
+      cursor: pointer;
+    }
+
+
+  </style>
+  
+</head>
+<body>
+  <form action="" onsubmit="return logar();"> <div class="login">
+      <h1>
+        <h2 class="kk">Login Merendei</h2>
+
+        <input class="ra1" type="text" placeholder="RA" id="login">
+        <br><br>
+        <input class="senha1" type="password" placeholder="Senha" id="senha">
+        <br><br>
+        <input type="submit" class="entra1" value="Entrar">
+      </h1>
+    </div>
+  </form>
+  <script>
+    function logar() {
+      var login = document.getElementById('login').value;
+      var senha = document.getElementById('senha').value;
+
+      if (login === "1526105" && senha === "1526105") {
+        alert('Bem-Vindo Merendei');
+        // Optionally, redirect to a different page after successful login
+        // window.location.href = "your_success_page.html";
+      } else {
+        alert('Usuário não faz parte do merendei.oi');
+      }
+
+      // Prevent default form submission behavior (optional, since onsubmit is used)
+      return false;
+    }
+  </script>
+</body>
+</html>
